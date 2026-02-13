@@ -11,7 +11,7 @@ namespace Harci_jatek
         public string nev;
         public int hp;
 
-        protected Egyseg(string nev, int hp)
+        private Egyseg(string nev, int hp)
         {
             this.nev = nev;
             this.hp = hp;
