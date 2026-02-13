@@ -19,24 +19,24 @@ namespace Harci_jatek
             string valasztas = Console.ReadLine();
 
             Console.Write("HP: ");
-            int hp = Convert.ToInt32(Console.ReadLine());
+            int hp = int.Parse(Console.ReadLine());
 
             if (valasztas == "1")
             {
                 Console.Write("Nyilak száma: ");
-                int nyil = Convert.ToInt32(Console.ReadLine());
+                int nyil = int.Parse(Console.ReadLine());
                 return new Ijasz(nev, hp, nyil);
             }
             else if (valasztas == "2")
             {
                 Console.Write("Kard ereje: ");
-                int kard = Convert.ToInt32(Console.ReadLine());
+                int kard = int.Parse(Console.ReadLine());
                 return new Katona(nev, hp, kard);
             }
             else if (valasztas == "3")
             {
                 Console.Write("Támadó erő: ");
-                int ero = Convert.ToInt32(Console.ReadLine());
+                int ero = int.Parse(Console.ReadLine());
                 return new Pajzsos(nev, hp, ero);
             }
             else

@@ -15,7 +15,7 @@
 
             if (kezdes == "2")
             {
-                Console.Clear();
+                Console.Clear();    
                 jatekos = KarakterKeszito.UjKarakter();
             }
             else
@@ -23,8 +23,9 @@
                 Console.Clear();
                 jatekos = new Katona("János vitéz", 100, 20);
             }
+           
 
-           Harcos ellenfel = new Ijasz("Legolasz", 80, 10);
+                Harcos ellenfel = new Ijasz("Legolasz", 80, 10);
 
             Egyseg j1 = (Egyseg)jatekos;
             Egyseg j2 = (Egyseg)ellenfel;
@@ -44,8 +45,8 @@
                 else
                 {
                     Console.WriteLine("\nKivel szeretnél támadni?");
-                    Console.WriteLine("1 - Saját karakter");
-                    Console.WriteLine("2 - Ellenfél");
+                    Console.WriteLine($"1 - {j1.nev}");
+                    Console.WriteLine($"2 - {j2.nev}");
                     Console.Write("Választásod: ");
                 }
                 
